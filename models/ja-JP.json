@@ -1,0 +1,1653 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "ポリーテスト",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "DEIntent",
+          "slots": [
+            {
+              "name": "DEName",
+              "type": "DEName",
+              "samples": [
+                "{DEName} で",
+                "{DEName}"
+              ]
+            }
+          ],
+          "samples": [
+            "{DEName}",
+            "どいつ語",
+            "ドイツ語",
+            "どいつ",
+            "ドイツ"
+          ]
+        },
+        {
+          "name": "ITIntent",
+          "slots": [
+            {
+              "name": "ITName",
+              "type": "ITName",
+              "samples": [
+                "{ITName}",
+                "{ITName} で"
+              ]
+            }
+          ],
+          "samples": [
+            "{ITName}",
+            "いたりあ語",
+            "イタリア語",
+            "イタリア",
+            "いたりあ"
+          ]
+        },
+        {
+          "name": "JPIntent",
+          "slots": [
+            {
+              "name": "JPName",
+              "type": "JPName",
+              "samples": [
+                "{JPName}"
+              ]
+            }
+          ],
+          "samples": [
+            "{JPName}",
+            "日本語",
+            "日本"
+          ]
+        },
+        {
+          "name": "EnglishIntent",
+          "slots": [],
+          "samples": [
+            "English",
+            "えいご",
+            "英語"
+          ]
+        },
+        {
+          "name": "FRIntent",
+          "slots": [
+            {
+              "name": "FRName",
+              "type": "FRName",
+              "samples": [
+                "{FRName}"
+              ]
+            }
+          ],
+          "samples": [
+            "{FRName}",
+            "ふらんす語",
+            "フランス語",
+            "ふらんす",
+            "フランス"
+          ]
+        },
+        {
+          "name": "ESIntent",
+          "slots": [
+            {
+              "name": "ESName",
+              "type": "ESName",
+              "samples": [
+                "{ESName}"
+              ]
+            }
+          ],
+          "samples": [
+            "{ESName}",
+            "すぺいん語",
+            "スペイン語",
+            "すぺいん",
+            "スペイン"
+          ]
+        },
+        {
+          "name": "USIntent",
+          "slots": [
+            {
+              "name": "USName",
+              "type": "USName",
+              "samples": [
+                "{USName}"
+              ]
+            }
+          ],
+          "samples": [
+            "合衆国の英語",
+            "米国英語",
+            "米国の英語",
+            "アメリカ英語",
+            "アメリカの英語",
+            "{USName}",
+            "合衆国",
+            "あめりか",
+            "米国",
+            "アメリカ合衆国",
+            "アメリカ"
+          ]
+        },
+        {
+          "name": "AUIntent",
+          "slots": [
+            {
+              "name": "AUName",
+              "type": "AUName",
+              "samples": [
+                "{AUName}"
+              ]
+            }
+          ],
+          "samples": [
+            "オーストラリア英語",
+            "オーストラリアの英語",
+            "{AUName}",
+            "オーストラリア"
+          ]
+        },
+        {
+          "name": "GBIntent",
+          "slots": [
+            {
+              "name": "GBName",
+              "type": "GBName",
+              "samples": [
+                "{GBName}"
+              ]
+            }
+          ],
+          "samples": [
+            "イギリス英語",
+            "イギリスの英語",
+            "{GBName}",
+            "いぎりす",
+            "イギリス"
+          ]
+        },
+        {
+          "name": "INIntent",
+          "slots": [
+            {
+              "name": "INName",
+              "type": "ITName",
+              "samples": [
+                "{INName}"
+              ]
+            }
+          ],
+          "samples": [
+            "インド英語",
+            "インドの英語",
+            "{INName}",
+            "いんど",
+            "インド"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "女性",
+                "synonyms": [
+                  "女"
+                ]
+              }
+            },
+            {
+              "id": "Vicki",
+              "name": {
+                "value": "ヴィッキー",
+                "synonyms": [
+                  "ビッキ",
+                  "びっき",
+                  "べっきー",
+                  "ベッキー",
+                  "ゔぃっきー",
+                  "ビッキー",
+                  "びっきー"
+                ]
+              }
+            },
+            {
+              "id": "Marlene",
+              "name": {
+                "value": "マレーネ",
+                "synonyms": [
+                  "まるれーね",
+                  "マルレーネ",
+                  "マリーネ",
+                  "まれね",
+                  "マレン",
+                  "まれん",
+                  "まれーね"
+                ]
+              }
+            },
+            {
+              "id": "Hans",
+              "name": {
+                "value": "ハンス",
+                "synonyms": [
+                  "男",
+                  "男性",
+                  "ハンズ",
+                  "はんず",
+                  "はん",
+                  "ハン",
+                  "はんす"
+                ]
+              }
+            }
+          ],
+          "name": "DEName"
+        },
+        {
+          "values": [
+            {
+              "id": "Carla",
+              "name": {
+                "value": "カーラ",
+                "synonyms": [
+                  "カルラ",
+                  "カウラ",
+                  "かうら",
+                  "かるら",
+                  "から",
+                  "かーら",
+                  "女",
+                  "女性"
+                ]
+              }
+            },
+            {
+              "id": "Giorgio",
+              "name": {
+                "value": "ジョルジオ",
+                "synonyms": [
+                  "ジョルジ",
+                  "じょるじ",
+                  "ジョージ",
+                  "じょーじ",
+                  "じょるじお",
+                  "男",
+                  "男性"
+                ]
+              }
+            }
+          ],
+          "name": "ITName"
+        },
+        {
+          "values": [
+            {
+              "id": "Mizuki",
+              "name": {
+                "value": "みずき",
+                "synonyms": [
+                  "いつもの人",
+                  "みずき",
+                  "女",
+                  "女性"
+                ]
+              }
+            },
+            {
+              "id": "Takumi",
+              "name": {
+                "value": "たくみ",
+                "synonyms": [
+                  "男性",
+                  "男",
+                  "タクミ"
+                ]
+              }
+            }
+          ],
+          "name": "JPName"
+        },
+        {
+          "values": [
+            {
+              "id": "Nicole",
+              "name": {
+                "value": "ニコール",
+                "synonyms": [
+                  "ニコレ",
+                  "にこれ",
+                  "にこる",
+                  "ニコル",
+                  "女",
+                  "女性",
+                  "にこーる"
+                ]
+              }
+            },
+            {
+              "id": "Russell",
+              "name": {
+                "value": "ラッセル",
+                "synonyms": [
+                  "男性",
+                  "男",
+                  "ルッセル",
+                  "るっせる",
+                  "らっせる"
+                ]
+              }
+            }
+          ],
+          "name": "AUName"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "女性",
+                "synonyms": [
+                  "女"
+                ]
+              }
+            },
+            {
+              "id": "Emma",
+              "name": {
+                "value": "エマ",
+                "synonyms": [
+                  "イーマ",
+                  "えっま",
+                  "えま"
+                ]
+              }
+            },
+            {
+              "id": "Amy",
+              "name": {
+                "value": "エイミー",
+                "synonyms": [
+                  "エミー",
+                  "エミィ",
+                  "えみ",
+                  "えいみー"
+                ]
+              }
+            },
+            {
+              "id": "Brian",
+              "name": {
+                "value": "ブライアン",
+                "synonyms": [
+                  "男性",
+                  "男",
+                  "ブリアン",
+                  "ぶりあん",
+                  "ぶらいあん"
+                ]
+              }
+            }
+          ],
+          "name": "GBName"
+        },
+        {
+          "values": [
+            {
+              "id": "Raveena",
+              "name": {
+                "value": "レイベーナ",
+                "synonyms": [
+                  "レイベナ",
+                  "レッベナ",
+                  "レベーナ",
+                  "れいべーな",
+                  "れべーな"
+                ]
+              }
+            },
+            {
+              "id": "Aditi",
+              "name": {
+                "value": "アディティ",
+                "synonyms": [
+                  "アディ",
+                  "あでてぃ",
+                  "アデティ",
+                  "アジチ"
+                ]
+              }
+            }
+          ],
+          "name": "INName"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "男性",
+                "synonyms": [
+                  "女性",
+                  "女",
+                  "男"
+                ]
+              }
+            },
+            {
+              "id": "Salli",
+              "name": {
+                "value": "サリー",
+                "synonyms": [
+                  "さっり",
+                  "サッリ",
+                  "サリィ"
+                ]
+              }
+            },
+            {
+              "id": "Kimberly",
+              "name": {
+                "value": "キンバリー",
+                "synonyms": [
+                  "きむべりー",
+                  "キムベリー",
+                  "きむばりー",
+                  "きんばりー"
+                ]
+              }
+            },
+            {
+              "id": "Kendra",
+              "name": {
+                "value": "ケンドラ",
+                "synonyms": [
+                  "キンドラ",
+                  "ケンダー",
+                  "ケンだー",
+                  "けんどら"
+                ]
+              }
+            },
+            {
+              "id": "Joanna",
+              "name": {
+                "value": "ジョアンナ",
+                "synonyms": [
+                  "じょあんな"
+                ]
+              }
+            },
+            {
+              "id": "Ivy",
+              "name": {
+                "value": "アイビー",
+                "synonyms": [
+                  "アイビィ",
+                  "イビィ",
+                  "アイブ",
+                  "アイヴィ",
+                  "アイヴィー"
+                ]
+              }
+            },
+            {
+              "id": "Matthew",
+              "name": {
+                "value": "マシュー",
+                "synonyms": [
+                  "マッシュー",
+                  "ますー",
+                  "まっすー",
+                  "ましゅー"
+                ]
+              }
+            },
+            {
+              "id": "Justin",
+              "name": {
+                "value": "ジャスティン",
+                "synonyms": [
+                  "じゃすてぃん",
+                  "ジャスチン"
+                ]
+              }
+            },
+            {
+              "id": "Joey",
+              "name": {
+                "value": "ジョーイ",
+                "synonyms": [
+                  "じょい",
+                  "じょーい",
+                  "ジョイ"
+                ]
+              }
+            }
+          ],
+          "name": "USName"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "女性",
+                "synonyms": [
+                  "女"
+                ]
+              }
+            },
+            {
+              "id": "Lea",
+              "name": {
+                "value": "リー",
+                "synonyms": [
+                  "レイア",
+                  "リィ",
+                  "レア"
+                ]
+              }
+            },
+            {
+              "id": "Celine",
+              "name": {
+                "value": "セリーヌ",
+                "synonyms": [
+                  "セリヌ",
+                  "セリン",
+                  "セライン",
+                  "セリーン",
+                  "セリネ",
+                  "せりーぬ"
+                ]
+              }
+            },
+            {
+              "id": "Mathieu",
+              "name": {
+                "value": "マチュー",
+                "synonyms": [
+                  "男",
+                  "男性",
+                  "ましゅー",
+                  "マシュー",
+                  "まつう",
+                  "マチウ",
+                  "まちう",
+                  "マッチュー",
+                  "まちゅー"
+                ]
+              }
+            }
+          ],
+          "name": "FRName"
+        },
+        {
+          "values": [
+            {
+              "id": "Conchita",
+              "name": {
+                "value": "コンチータ",
+                "synonyms": [
+                  "女",
+                  "女性",
+                  "コンチタ",
+                  "コンチィ",
+                  "こんちーた"
+                ]
+              }
+            },
+            {
+              "id": "Enrique",
+              "name": {
+                "value": "エンリケ",
+                "synonyms": [
+                  "エンリ",
+                  "男性",
+                  "男",
+                  "えんりけ",
+                  "エンリク",
+                  "えんりく"
+                ]
+              }
+            }
+          ],
+          "name": "ESName"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "DEIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "DEName",
+              "type": "DEName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1448607978297.590634532891"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1076247165274.451535597052.1506954313600"
+                },
+                {
+                  "type": "isNotInSet",
+                  "prompt": "Slot.Validation.155999924078.835074939810.1371939205235",
+                  "values": [
+                    "女",
+                    "女性"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ITIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "ITName",
+              "type": "ITName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.904459693715.1374667971783"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.234522122543.1116275107064.1240997688073"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "JPIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "JPName",
+              "type": "JPName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1249073183337.199816637109"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1169936681856.184107306237.964078226618"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EnglishIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": []
+        },
+        {
+          "name": "FRIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "FRName",
+              "type": "FRName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.803407267797.1520845996514"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.179107498521.51489349149.581175135866"
+                },
+                {
+                  "type": "isNotInSet",
+                  "prompt": "Slot.Validation.179107498521.51489349149.841570853737",
+                  "values": [
+                    "女",
+                    "女性"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ESIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "ESName",
+              "type": "ESName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1127275830524.425849917586"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.351644152082.1417567930429.981776178346"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "USIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "USName",
+              "type": "USName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1310503807002.148604764337"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1310503807002.148604764337.1084476095479"
+                },
+                {
+                  "type": "isNotInSet",
+                  "prompt": "Slot.Validation.1310503807002.148604764337.671711166364",
+                  "values": [
+                    "男",
+                    "男性"
+                  ]
+                },
+                {
+                  "type": "isNotInSet",
+                  "prompt": "Slot.Validation.1310503807002.148604764337.1494310687708",
+                  "values": [
+                    "女",
+                    "女性"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AUIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "AUName",
+              "type": "AUName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.57608813888.984174003420"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.57608813888.984174003420.833728526123"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GBIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "GBName",
+              "type": "GBName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1409148528373.1497578743573"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1409148528373.1497578743573.29533028723"
+                },
+                {
+                  "type": "isNotInSet",
+                  "prompt": "Slot.Validation.1409148528373.1497578743573.540285569802",
+                  "values": [
+                    "女",
+                    "女性"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "INIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "INName",
+              "type": "ITName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1300295225762.428474753533"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1300295225762.428474753533.599826333826"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.877225541126.454771447488",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはマッズかナジャのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はマッズかナジャのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1126301602899.586070925221",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはルーベンかロッテのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はルーベンかロッテのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1448607978297.590634532891",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかっている場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.67497363750.254350893458",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはカールとドーラのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はカールとドーラのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.904459693715.1374667971783",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはジョルジオかカーラのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はジョルジオかカーラのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかっている場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1249073183337.199816637109",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはタクミかミズキのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はタクミかミズキのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかっている場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.548569639736.687829953694",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.148642120963.56241705407",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはマキシムかタチアナのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はマキシムかタチアナのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.480644273173.1099924324767",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはラッセルかニコルのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はラッセルかニコルのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかる場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかる場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.480644273173.204807156181",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはブライアン、エマ、エイミーの誰にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はブライアン、エマ、エイミーの誰にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかっている場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.901073373947.1221608349109",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかる場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかる場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーはアディティかレイベーナのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はアディティかレイベーナのどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.901073373947.296426132826",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "話者は誰にしますか。名前がわからない場合は性別で絞り込むこともできます。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.803407267797.1520845996514",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはマチュー、リー、セリーヌの誰にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はマチュー、リー、セリーヌの誰にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。スピーカーの名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。話者の名前がわかっている場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.26631105377.1454002337593",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "ポルトガル語にはブラジルと欧州の二種類があります。どちらの国のポルトガル語にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.26631105377.1497247221099",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはリカルドかビトリアのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はリカルドかビトリアのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.26631105377.767851460766",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはクリスティアーノかイネスのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はクリスティアーノかイネスのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1127275830524.188740549472",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スペイン語には米国と欧州の二種類があります。どちらの国のスペイン語にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1127275830524.425849917586",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはエンリケかコンチータのどちらがいいですか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はエンリケかコンチータのどちらがいいですか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらがいいですか。スピーカーの名前がわかる場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらがいいですか。話者の名前がわかる場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1127275830524.931979681579",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはミゲルかペネロペのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はミゲルかペネロペのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.445285338079.821443804938",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーはハンス、マルレーネ、ビッキーの誰にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はハンス、マルレーネ、ビッキーの誰にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.411847234426.93329311922",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。名前がわかる場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。名前がわかる場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1076247165274.451535597052.1506954313600",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。ドイツ語スピーカーはハンス、マルレーネ、ビッキーの中から選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。ドイツ語話者はハンス、マルレーネ、ビッキーの中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1076247165274.509580577389.456346373812",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "性別は男性か女性のどちらかから選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.155999924078.835074939810.1371939205235",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "ドイツ語の女性スピーカーにはマルレーネとビッキーの二人がいます。どちらのスピーカーにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "ドイツ語の女性話者にはマルレーネとビッキーの二人がいます。どちらの話者にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.234522122543.1116275107064.1240997688073",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。イタリア語スピーカーはジョルジオかカーラの二人のうちから選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。イタリア語話者はジョルジオかカーラの二人のうちから選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1169936681856.184107306237.964078226618",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。日本語スピーカーはタクミかミズキの二人のうちから選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。日本語話者はタクミかミズキの二人のうちから選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.179107498521.51489349149.581175135866",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。フランス語スピーカーはマチュー、セリーヌ、リーの中から選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。フランス語話者はマチュー、セリーヌ、リーの中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.179107498521.51489349149.841570853737",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "フランス語の女性スピーカーにはセリーヌとリーの二人がいます。どちらのスピーカーにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "フランス語の女性話者にはセリーヌとリーの二人がいます。どちらの話者にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.351644152082.1417567930429.981776178346",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。スペイン語スピーカーはエンリケかコンチータの二人の中から選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。スペイン語話者はエンリケかコンチータの二人の中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.434712899848.51083477787",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その国の英語は対応していません。オーストラリア、イギリス、インド、アメリカの四ヶ国の中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.1203651821259.1100587539205",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。オーストラリア英語のスピーカーはラッセルかニコルの二人の中からどちらかを選んでください"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。オーストラリア英語の話者はラッセルかニコルの二人の中からどちらかを選んでください"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.155020627840.1460630770859",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。インド英語のスピーカーはアディティかレイベーナの二人の中から選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。インド英語の話者はアディティかレイベーナの二人の中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.883610036058.644911096374",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。イギリス英語スピーカーはブライアン、エマ、エイミーの中から選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。イギリス英語話者はブライアン、エマ、エイミーの中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.883610036058.733057745063",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "イギリス英語の女性スピーカーにはエマとエイミーの二人がいます。どちらのスピーカーにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "イギリス英語の女性話者にはエマとエイミーの二人がいます。どちらの話者にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.969156735676.526123192017",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。もう一度スピーカーの名前を言ってください。またスピーカーの名前がわからない場合は性別で絞り込むことができます。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。もう一度話者の名前を言ってください。また話者の名前がわからない場合は性別で絞り込むことができます。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.969156735676.1297295627305",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の男性スピーカーにはマシュー、ジャスティン、ジョーイの三人がいます。どのスピーカーにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の男性話者にはマシュー、ジャスティン、ジョーイの三人がいます。どの話者にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1383626258211.969156735676.1317506392208",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の女性話者にはサリー、キンバリー、ケンドラ、ジョアンナの四人がいます、どの話者にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の女性スピーカーにはサリー、キンバリー、ケンドラ、ジョアンナの四人がいます、どのスピーカーにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1310503807002.148604764337",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは誰にしますか。名前がわからない場合は性別で絞り込むこともできます。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は誰にしますか。名前がわからない場合は性別で絞り込むこともできます。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1310503807002.148604764337.1084476095479",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。もう一度話者の名前を言ってください。また話者の名前がわからない場合は性別で絞り込むことができます。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。もう一度スピーカーの名前を言ってください。またスピーカーの名前がわからない場合は性別で絞り込むことができます。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1310503807002.148604764337.671711166364",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の男性話者にはマシュー、ジャスティン、ジョーイの三人がいます。どの話者にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の男性スピーカーにはマシュー、ジャスティン、ジョーイの三人がいます。どのスピーカーにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1310503807002.148604764337.1494310687708",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の女性スピーカーにはサリー、キンバリー、ケンドラ、ジョアンナの四人がいます、どのスピーカーにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "アメリカ英語の女性話者にはサリー、キンバリー、ケンドラ、ジョアンナの四人がいます、どの話者にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.57608813888.984174003420",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "スオイーカーはラッセルかニコルのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はラッセルかニコルのどちらにしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかる場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかる場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.57608813888.984174003420.833728526123",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。オーストラリア英語の話者はラッセルかニコルの二人の中からどちらかを選んでください"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。オーストラリア英語のスピーカーはラッセルかニコルの二人の中からどちらかを選んでください"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1409148528373.1497578743573",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかっている場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーはブライアン、エマ、エイミーの誰にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "話者はブライアン、エマ、エイミーの誰にしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1409148528373.1497578743573.29533028723",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。イギリス英語話者はブライアン、エマ、エイミーの中から選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。イギリス英語スピーカーはブライアン、エマ、エイミーの中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1409148528373.1497578743573.540285569802",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "イギリス英語の女性話者にはエマとエイミーの二人がいます。どちらの話者にしますか。"
+          },
+          {
+            "type": "PlainText",
+            "value": "イギリス英語の女性スピーカーにはエマとエイミーの二人がいます。どちらのスピーカーにしますか。"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1300295225762.428474753533",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "話者は男性か女性のどちらにしますか。また話者の名前がわかる場合は名前を言ってください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "スピーカーは男性か女性のどちらにしますか。またスピーカーの名前がわかる場合は名前を言ってください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1300295225762.428474753533.599826333826",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "その名前の話者は対応していません。インド英語の話者はアディティかレイベーナの二人の中から選んでください。"
+          },
+          {
+            "type": "PlainText",
+            "value": "その名前のスピーカーは対応していません。インド英語のスピーカーはアディティかレイベーナの二人の中から選んでください。"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1507491200438.31248595342.928211869613",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "英語には四種類あります。"
+          }
+        ]
+      }
+    ]
+  }
+}
