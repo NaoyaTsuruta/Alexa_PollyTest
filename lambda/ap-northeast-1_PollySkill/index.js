@@ -93,7 +93,7 @@ const LaunchRequestHandler = {
         if(!persistentAttributes.description){
             launchSpeech = "ポリーテストではアマゾンポリーを利用した各言語のサンプル音声を聞くことができます。対応言語は9種類、話者は27名です。";
             askSpeech = "例文を聞きたい言語を言ってください。また、話者の名前がわかっている場合は名前を直接言ってもその話者の言語の例文を聞くことができます。言語の種類を聞きたい場合は、ヘルプと言ってください。";
-            PersistentAttributes.Description = 1;
+            persistentAttributes.description = 1;
             handlerInput.attributesManager.setPersistentAttributes(persistentAttributes);
             await handlerInput.attributesManager.savePersistentAttributes();
         }
