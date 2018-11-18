@@ -65,6 +65,7 @@ exports.handler = async function (event, context) {
             GBHandler,
             INHandler,
             EnglishHandler,
+            HelpHandler,
             SessionEndedRequestHandler,
             CancelAndStopIntentHandler
         )
@@ -82,17 +83,19 @@ const LaunchRequestHandler = {
         },
     async handle(handlerInput) {
         //DynamoDBから永続化情報を取得
-        let PersistentAttributes = await handlerInput.attributesManager.getPersistentAttributes();
+        let persistentAttributes = await handlerInput.attributesManager.getPersistentAttributes();
         //response文を格納する変数を宣言(初回と2回目以降で文が違うのでlet、speakとresponse文の為に２つ)
         let launchSpeech,askSpeech,speech;
         //2回目以降のresponse文
         launchSpeech = "";
         askSpeech = "例文を聞きたい言語、または話者の名前を言ってください。";
         //時間の永続化情報がない時(初回利用の時)response文を変更
-        if(!PersistentAttributes.Description){
+        if(!persistentAttributes.description){
             launchSpeech = "ポリーテストではアマゾンポリーを利用した各言語のサンプル音声を聞くことができます。対応言語は9種類、話者は27名です。";
             askSpeech = "例文を聞きたい言語を言ってください。また、話者の名前がわかっている場合は名前を直接言ってもその話者の言語の例文を聞くことができます。言語の種類を聞きたい場合は、ヘルプと言ってください。";
             PersistentAttributes.Description = 1;
+            handlerInput.attributesManager.setPersistentAttributes(persistentAttributes);
+            await handlerInput.attributesManager.savePersistentAttributes();
         }
 
         //response文の形成
@@ -248,7 +251,7 @@ const ErrorHandler = {
         const errorSpeech = ["うまくいきませんでした、ごめんなさい。","すいません、うまくいきませんでした。","失敗しました、ごめんなさい。"];
         const askSpeech = "もう一度言ってください。"
 
-        const speech = errorSpeech(Math.floor(Math.random()*2)) + askSpeech;
+        const speech = errorSpeech[Math.floor(Math.random()*2)] + askSpeech;
 
         return handlerInput.responseBuilder
             .speak(speech)
