@@ -65,6 +65,7 @@ exports.handler = async function (event, context) {
             GBHandler,
             INHandler,
             EnglishHandler,
+            HelpHandler,
             SessionEndedRequestHandler,
             CancelAndStopIntentHandler
         )
@@ -82,15 +83,19 @@ const LaunchRequestHandler = {
         },
     async handle(handlerInput) {
         //DynamoDBから永続化情報を取得
-        let PersistentAttributes = await handlerInput.attributesManager.getPersistentAttributes();
+        let persistentAttributes = await handlerInput.attributesManager.getPersistentAttributes();
         //response文を格納する変数を宣言(初回と2回目以降で文が違うのでlet、speakとresponse文の為に２つ)
         let launchSpeech,askSpeech,speech;
         //2回目以降のresponse文
         launchSpeech = "";
+        askSpeech = "ポリーテストです。例文を聞きたい言語、または話者の名前を言ってください。また、このスキルの説明をもう一度聞きたいときはヘルプと言ってください。";
         //時間の永続化情報がない時(初回利用の時)response文を変更
-        if(!PersistentAttributes.Description){
+        if(!persistentAttributes.description){
             launchSpeech = "ポリーテストではアマゾンポリーを利用した各言語のサンプル音声を聞くことができます。対応言語は9種類、話者は27名です。";
-            askSpeech = "例文を聞きたい言語は何ですか。";
+            askSpeech = "例文を聞きたい言語を言ってください。また、話者の名前がわかっている場合は名前を直接言ってもその話者の言語の例文を聞くことができます。言語の種類を聞きたい場合は、ヘルプと言ってください。";
+            persistentAttributes.description = 1;
+            handlerInput.attributesManager.setPersistentAttributes(persistentAttributes);
+            await handlerInput.attributesManager.savePersistentAttributes();
         }
 
         //response文の形成
@@ -218,8 +223,7 @@ const CancelAndStopIntentHandler = {
     
         return request.type === 'IntentRequest'
             && (request.intent.name === 'AMAZON.StopIntent'
-            ||  request.intent.name === 'AMAZON.CancelIntent'
-            ||  request.intent.name === 'Amazon.NoIntent');
+            ||  request.intent.name === 'AMAZON.CancelIntent');
         },
     
     handle(handlerInput){
@@ -247,11 +251,34 @@ const ErrorHandler = {
         const errorSpeech = ["うまくいきませんでした、ごめんなさい。","すいません、うまくいきませんでした。","失敗しました、ごめんなさい。"];
         const askSpeech = "もう一度言ってください。"
 
-        const speech = errorSpeech(Math.floor(Math.random()*2)) + askSpeech;
+        const speech = errorSpeech[Math.floor(Math.random()*2)] + askSpeech;
 
         return handlerInput.responseBuilder
             .speak(speech)
             .reprompt(askSpeech)
+            .getResponse();
+    }
+};
+
+const HelpHandler = {
+    canHandle(handlerInput) {
+        return handlerInput.requestEnvelope.request.type === "IntentRequest"
+            && handlerInput.requestEnvelope.request.intent.name === "AMAZON.HelpIntent";
+    },
+    handle(handlerInput) {
+        const helpSpeech = [
+            "このスキルではアマゾンポリーを利用して、アレクサで利用可能な言語、話者の例文を聞くことができます。",
+            "利用可能な言語はドイツ語、スペイン語、イタリア語、日本語、フランス語、アメリカ英語、オーストラリア英語、イギリス英語、インド英語の九種類です。",
+            "話者は合計で27名います。各言語話者の名前はアレクサアプリにお送りした、音声合成マークアップ言語リファレンスのボイスタグの欄をご覧ください。"
+        ];
+
+        const speech = helpSpeech[0] + helpSpeech[1] + helpSpeech[2] + askSpeech;
+
+        const askSpeech = "聞きたい例文の言語、話者の名前を言ってください。";
+        return handlerInput.responseBuilder
+            .speak(speech)
+            .reprompt(askSpeech)
+            .withSimpleCard("音声合成マークアップ言語（SSML）のリファレンス","https://developer.amazon.com/ja/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html#tips-for-using-amazon-polly-voices")
             .getResponse();
     }
 }
