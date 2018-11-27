@@ -55,6 +55,7 @@ exports.handler = async function (event, context) {
       skill = Alexa.SkillBuilders.standard()
         .addRequestHandlers(
             LaunchRequestHandler,
+            GenderHandler,
             DEHandler,
             ITHandler,
             JPHandler,
@@ -107,6 +108,24 @@ const LaunchRequestHandler = {
             .getResponse();
     }
 };
+
+const GenderHandler = {
+    canHandle(handlerInput) {
+        return handlerInput.requestEnvelope.request.type === "IntentRequest"
+            && handlerInput.requestEnvelope.request.intent.name === "GenderIntent";
+    },
+    handle(handlerInput) {
+        const genderSpeech = "性別だけではテストすることはできません。";
+        const askSpeech = "言語かスピーカーの名前を言ってください。";
+
+        const speech = genderSpeech + askSpeech;
+
+        return handlerInput.responseBuilder
+            .speak(speech)
+            .reprompt(askSpeech)
+            .getResponse();
+    }
+}
 
 const DEHandler = {
     canHandle(handlerInput) {
